@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  </head>
+  <style> 
+    /* Esercizio 1 */
+
+    .album-container {
+            text-align: center;
+            padding-bottom: 1em;
+            margin: 1em;
+        }
+
+        .album-container img {
+            width: 100%;
+        }
+
+        .album-artist:after {
+            content: ' • '
+        }
+
+        .album-title {
+            margin-top: 0.50em;
+            margin-bottom: 0.25em;
+            font-size: 1.3em
+        }
+
+  /* Esercizio 2 */
+
+  nav {
+            background-color: rgba(26, 16, 34, 0.72);
+            height: 7vh;
+        }
+
+        .carousel-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: lowercase;
+            color: #d1d1d1;
+            mix-blend-mode: color-burn;
+            font-weight: 900;
+        }
+
+  </style>
+ 
+    <body data-new-gr-c-s-check-loaded="14.1000.0" data-gr-ext-installed="">
+ <!-- Esercizio 2 
+    Implementa una navigation bar usando il componente boostrap apposito.
+     Questa navigazione dovrà linkare ogni sezione nella tua pagina. -->
+     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#fav-albums">Preferiti</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#best-album-ever">Migliori Album</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#wall-of-shame">Link</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#tapestry">Link</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+     <!-- Esercizio 3
+        Crea una sezione responsive per i tuoi album preferiti.
+            In questa sezione dovrai avere:
+
+        4 album per linea quando lo schermo è molto grande
+        3 album per linea quando lo schermo ha una dimensione intermedia (tablet o simili)
+        2 album per linea qunado lo schermo è molto piccolo (mobile)
+    -->
+    <section id="fav-albums">
+      <div class="container">
+          <div class="row py-5">
+              <div class="col-6 col-md-4 col-lg-3">
+                  <div class="album-container">
+                      <img src="assets/img/Michael Jackson Thriller.jpg" class="img-fluid">
+                      <h4 class="album-title">Thriller</h4>
+                      <span class="album-artist">Michael Jackson Thriller</span>
+                      <span class="album-genre">Rock</span>
+                  </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                  <div class="album-container">
+                      <img src="assets/img/ligabue.jpg" class="img-fluid">
+                      <h4 class="album-title">Secondo Tempo</h4>
+                      <span class="album-artist">Ligabue</span>
+
+                      <span class="album-genre">Rock</span>
+                  </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                  <div class="album-container">
+                      <img src="assets/img/bob.jpg" class="img-fluid">
+                      <h4 class="album-title"> Best Of Bob Dylan</h4>
+                      <span class="album-artist">Bob Dylan </span>
+
+                      <span class="album-genre">Rock</span>
+                  </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                  <div class="album-container">
+                      <img src="assets/img/manesk.jpeg" class="img-fluid">
+                      <h4 class="album-title">Il Ballo Della Vita</h4>
+                      <span class="album-artist">Meneskin</span>
+                      <span class="album-genre">Rock</span>
+                  </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                  <div class="album-container">
+                      <img src="assets/img/gigi.jpg"class="img-fluid">
+                      <h4 class="album-title">L'AMOUR TOUJOURS</h4>
+                      <span class="album-artist">Gigi D'agostino- </span>
+                      <span class="album-genre">Rock</span>
+                  </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                  <div class="album-container">
+                      <img src="assets/img/Taylor_Swift_-_Fearless.png" class="img-fluid">
+                      <h4 class="album-title">Fearless  </h4>
+                      <span class="album-artist">Taylor Swift</span>
+
+                      <span class="album-genre">Rock</span>
+                  </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                  <div class="album-container">
+                      <img src="assets/img/vasco-rossi-buoni-o-cattivi-fronte.jpg" class="img-fluid">
+                      <h4 class="album-title">Buoni o Cattivi</h4>
+                      <span class="album-artist">Vasco Rossi</span>
+
+                      <span class="album-genre">Rock</span>
+                  </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                  <div class="album-container">
+                      <img src="assets/img/lucio.jpeg" class="img-fluid">
+                      <h4 class="album-title">Emozioni</h4>
+                      <span class="album-artist">Lucio Battisti</span>
+                      <span class="album-genre">Acid Jazz</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+      <!-- Esercizio 4
+        Crea una sezione per le recensioni degli album.
+
+            Prendi un album che ti piace molto e crea una sezione con:
+
+        Una grande immagine di copertina
+        Titolo
+        Band
+        Durata
+        Genere
+        Tracce dell'album ( in una tabella. Trovala tra i componenti Bootstrap ) 
+        ... e qualsiasi cosa ti venga in mente di interessante che lo riguardi!
+
+    -->
+
+    <hr>
+
+    <section id="best-album-ever">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img src="assets/img/tango.png" class="img-fluid" data-bs-toggle="collapse"
+                        data-bs-target="#best-album-description">
+                </div>
+                <div id="best-album-description" class="col-12 col-md-8 collapse show">
+                    <div class="d-flex flex-column justify-content-center h-100">
+                        <h4>Gotan Project - La Revancha Del Tango</h4>
+                        <div>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+  </body>
+</html>
